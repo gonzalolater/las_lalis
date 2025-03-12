@@ -3,18 +3,34 @@ import React from 'react';
 const App = () => {
   return (
     <div
-      className="container"
-      style={{
-        background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-      }}
+    className="container"
+    style={{
+      background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+    }}
     >
       <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
         Las Lalis
       </h1>
+       <a
+          href="tel:+5491163041486"
+          className="btn contact-details"
+          style={{
+            textDecoration: 'none', // Elimina el subrayado del enlace
+            padding: '10px 20px', // Añade padding para hacerlo más grande
+            backgroundColor: '#007bff', // Color de fondo (puedes cambiarlo)
+            color: 'white', // Color del texto
+            borderRadius: '5px', // Bordes redondeados
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >   <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
+        Llamame
+      </h1></a>
+        <span></span>
       <img src="https://i.postimg.cc/1gJrVhW2/480975919-975739397447493-4501972730056114778-n.jpg" alt='logo'/>
       <div
         className="row"
@@ -225,8 +241,6 @@ const App = () => {
         </div>
         </div>
         
-        <a href="tel:+5491163041486" class="btn contact-details"
-      ><i class="fas fa-mobile-alt"></i> Llamame</a>
 
         </div>
         </div>
