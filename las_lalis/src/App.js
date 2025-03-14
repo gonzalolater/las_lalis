@@ -13,25 +13,33 @@ const App = () => {
     }}
     >
       <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
-        Las Lalis
+        Las Lalis ❤️❤️❤️
       </h1>
-       <a
-          href="tel:+5491163041486"
-          className="btn contact-details"
-          style={{
-            textDecoration: 'none', // Elimina el subrayado del enlace
-            padding: '10px 20px', // Añade padding para hacerlo más grande
-            backgroundColor: '#007bff', // Color de fondo (puedes cambiarlo)
-            color: 'white', // Color del texto
-            borderRadius: '5px', // Bordes redondeados
-            display: 'flex',
-            alignItems: 'center',
-          }}
-        >   <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
-        Llamame
-      </h1></a>
+<button
+  onClick={() => window.location.href = "tel:+5491163041486"}
+  style={{
+    background: 'linear-gradient(to right, #800080, #C71585)',
+    color: 'white',
+    padding: '10px 20px',
+    fontSize: '16px',
+    borderRadius: '5px',
+    border: 'none',
+    cursor: 'pointer',
+    boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+    transition: 'transform 0.2s ease-in-out',
+    display: 'inline-block',
+    whiteSpace: 'nowrap',
+    minWidth: '100px',
+    fontWeight: '600', // Hace el texto más grueso (600 o 700 para más grosor)
+    textShadow: '1px 1px 0 red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red', // Borde rojo
+  }}
+  onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
+  onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
+  onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+>
+  Llámame
+</button>
         <span></span>
-      <img src="https://i.postimg.cc/1gJrVhW2/480975919-975739397447493-4501972730056114778-n.jpg" alt='logo'/>
       <div
         className="row"
         style={{
@@ -174,7 +182,7 @@ const App = () => {
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
           <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
-            Camperas
+            Camperas de Moda
           </h3>
           <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
             Consultar
@@ -240,8 +248,6 @@ const App = () => {
           </p>
         </div>
         </div>
-        
-
         </div>
         </div>
   );
