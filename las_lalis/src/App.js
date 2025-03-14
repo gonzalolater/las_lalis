@@ -2,14 +2,27 @@ import React from 'react';
 
 const App = () => {
   return (
+    <>
+          <style>
+        {`
+          body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evita el scroll horizontal */
+          }
+        `}
+      </style>
     <div
-    style={{
-      background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'flex-start',
-    }}>
+        className="container"
+        style={{
+          background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
+          minHeight: '100vh',
+          width: '100vw',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+        }}
+      >
       <div>
     <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
         Las Lalis ❤️❤️❤️
@@ -41,16 +54,17 @@ const App = () => {
   </button>
 </div>
 </div>
-    <div
-    className="container"
-    style={{
-      background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'flex-start',
-    }}
-    >
+<div
+  className="container"
+  style={{
+    background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
+    minHeight: '100vh',
+    width: '100vw', // Asegura que el contenedor ocupe todo el ancho de la pantalla
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+  }}
+>
       <div/>
         <span></span>
       <div
@@ -305,7 +319,7 @@ const App = () => {
         </div>
         </div>
         </div>
-<div style={{ display: 'flex', justifyContent: 'center', marginBottom:'150px' }}>
+<div style={{ display: 'flex', justifyContent: 'center', marginBottom:'100px' }}>
   <a
     href="https://www.instagram.com/las_lalis_/"
     target="_blank"
@@ -359,22 +373,29 @@ const App = () => {
     </span>
   </a>
 </div>
-          <footer
-            style={{
-              marginTop:'200px',
-              backgroundColor: 'purple',
-              color: 'white',
-              padding: '20px',
-              textAlign: 'center',
-              width: '100%',
-              position: 'fixed', // Para que el footer se fije en la parte inferior
-              bottom: '0', // Para que el footer se pegue a la parte inferior
-            }}
-          >
-            <p>ENVIOS A TODO EL PAIS - ♡SHOWROOM♡</p>
-            <p> AMÉRICA 1724, GRAND BOURG, BUENOS AIRES - COORDINAR CITA♡</p>
-          </footer>
+<footer
+  style={{
+    backgroundColor: 'purple',
+    color: 'white',
+    padding: '10px', // Reducido el padding a 10px
+    textAlign: 'center',
+    width: '100%',
+    position: 'fixed',
+    bottom: '0',
+  }}
+>
+  <p style={{ fontSize: '14px', margin: '5px 0' }}>
+    ENVIOS A TODO EL PAIS - ♡SHOWROOM♡
+  </p>
+  <p style={{ fontSize: '14px', margin: '5px 0' }}>
+    AMÉRICA 1724, GRAND BOURG, BUENOS AIRES
+  </p>
+  <p style={{ fontSize: '14px', margin: '5px 0' }}>
+    COORDINAR CITA♡
+  </p>
+</footer>
         </div>
+  </>
   );
 };
 
