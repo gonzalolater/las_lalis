@@ -3,6 +3,45 @@ import React from 'react';
 const App = () => {
   return (
     <div
+    style={{
+      background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+    }}>
+      <div>
+    <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
+        Las Lalis ❤️❤️❤️
+      </h1>
+<div style={{ textAlign: 'center' }}>
+  <button
+    onClick={() => window.location.href = "tel:+5491163041486"}
+    style={{
+      background: 'linear-gradient(to right, #800080, #C71585)',
+      color: 'white',
+      padding: '10px 20px',
+      fontSize: '16px',
+      borderRadius: '5px',
+      border: 'none',
+      cursor: 'pointer',
+      boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+      transition: 'transform 0.2s ease-in-out',
+      display: 'inline-block', // Mantenemos inline-block
+      whiteSpace: 'nowrap',
+      minWidth: '100px',
+      fontWeight: '600',
+      textShadow: '1px 1px 0 red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red',
+    }}
+    onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
+    onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
+    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+  >
+    Llámame o escribime por WhatsApp - click aca -
+  </button>
+</div>
+</div>
+    <div
     className="container"
     style={{
       background: 'linear-gradient(to bottom, #FFE4E1, #FF69B4, #9370DB)',
@@ -12,33 +51,7 @@ const App = () => {
       justifyContent: 'flex-start',
     }}
     >
-      <h1 style={{ color: 'purple', fontSize: '48px', textAlign: 'center' }}>
-        Las Lalis ❤️❤️❤️
-      </h1>
-<button
-  onClick={() => window.location.href = "tel:+5491163041486"}
-  style={{
-    background: 'linear-gradient(to right, #800080, #C71585)',
-    color: 'white',
-    padding: '10px 20px',
-    fontSize: '16px',
-    borderRadius: '5px',
-    border: 'none',
-    cursor: 'pointer',
-    boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
-    transition: 'transform 0.2s ease-in-out',
-    display: 'inline-block',
-    whiteSpace: 'nowrap',
-    minWidth: '100px',
-    fontWeight: '600', // Hace el texto más grueso (600 o 700 para más grosor)
-    textShadow: '1px 1px 0 red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red', // Borde rojo
-  }}
-  onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-  onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
-  onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
->
-  Llámame
-</button>
+      <div/>
         <span></span>
       <div
         className="row"
@@ -49,7 +62,7 @@ const App = () => {
         }}
       >
         <div
-          className="col-md-5"
+        className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -61,15 +74,17 @@ const App = () => {
             alt="Camperas"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Camperas
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
         </div>
         <div
-          className="col-md-5"
+          className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -81,15 +96,17 @@ const App = () => {
             alt="Vestidos"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Vestidos
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
         </div>
         <div
-          className="col-md-5"
+          className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -97,39 +114,21 @@ const App = () => {
           }}
         >
           <img
-            src="https://i.postimg.cc/cgLTF4gd/462518987-1716320375870375-2855178953111451866.jpg"
+            src="https://i.postimg.cc/1RggPd21/Jeans-las-locas.jpg"
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
-            Top
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
+            Jeans Las Locas
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
         </div>
         <div
-          className="col-md-5"
-          style={{
-            margin: '10px',
-            flexBasis: 'calc(50% - 20px)',
-            maxWidth: '300px',
-          }}
-        >
-          <img
-            src="https://i.postimg.cc/DWgBQbzC/470357006-604598422062569-8898303796837868436-n.jpg"
-            alt="Tops"
-            style={{ width: '100%', height: '300px', objectFit: 'cover' }}
-          />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
-            Jeans
-          </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
-        </div>
-        <div
-          className="col-md-5"
+          className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -141,15 +140,17 @@ const App = () => {
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Top y Pollera
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
         </div>
         <div
-          className="col-md-5"
+          className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -157,19 +158,21 @@ const App = () => {
           }}
         >
           <img
-            src="https://i.postimg.cc/FfBJQ9Cr/481424748-17997037529756224-5146194311171822458.jpg"
+            src="https://i.postimg.cc/FfBJQ9Cr/481424748-17997037529756224-51461  94311171822458.jpg"
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Top
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
         </div>
         <div
-          className="col-md-5"
+          className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -181,15 +184,17 @@ const App = () => {
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Camperas de Moda
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
         </div>
         <div
-          className="col-md-5"
+          className="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -201,15 +206,39 @@ const App = () => {
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Remeras De Moda
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
+        </div>
+                  <div
+          style={{
+            margin: '10px',
+            flexBasis: 'calc(50% - 20px)',
+            maxWidth: '300px',
+          }}
+        >
+          <img
+            src="https://i.postimg.cc/Gh8v7tdY/Jeans-cortos-Las-Locas.jpg"
+            alt="Jeans Cortos"
+            style={{ width: '100%', height: '300px', objectFit: 'cover' }}
+          />
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
+            Jeans Cortos Las Locas
+          </h3>
+          
         </div>
         <div
-          className="col-md-5"
+          cclassName="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -221,14 +250,22 @@ const App = () => {
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Remeras y Gorras Alternativas
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
           <div
-          className="col-md-5"
+          style={{
+            margin: '10px',
+            flexBasis: 'calc(50% - 20px)',
+            maxWidth: '300px',
+          }}
+        ><div
+          cclassName="row"
           style={{
             margin: '10px',
             flexBasis: 'calc(50% - 20px)',
@@ -240,15 +277,88 @@ const App = () => {
             alt="Tops"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
-          <h3 style={{ color: 'blue', fontSize: '24px', textAlign: 'center' }}>
+          <h3 style={{
+            color: 'white', // Texto blanco
+            fontSize: '24px',
+            textAlign: 'center',
+            textShadow: '1px 1px 0 purple, -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple' // Borde violeta
+          }}>
             Buzos Rompeviento
           </h3>
-          <p style={{ color: 'black', fontSize: '18px', textAlign: 'center' }}>
-            Consultar
-          </p>
+           <div
+          style={{
+            margin: '10px',
+            flexBasis: 'calc(50% - 20px)',
+            maxWidth: '300px',
+          }}
+        ></div>
+        </div>
+        <div
+          cclassName="row"
+          style={{
+            margin: '10px',
+            flexBasis: 'calc(50% - 20px)',
+            maxWidth: '300px',
+          }}
+        ></div>
         </div>
         </div>
         </div>
+        </div>
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <a
+    href="https://www.instagram.com/las_lalis_/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      margin: '10px',
+      fontSize: '70px',
+      color: '#E1306C',
+      textDecoration: 'none',
+    }}
+  >
+    <i className="fa fa-instagram" aria-hidden="true"></i>
+    <span
+      style={{
+        color: 'white',
+        marginLeft: '5px',
+        fontSize: '16px',
+        padding: '5px',
+        borderRadius: '5px',
+      }}
+    >
+      Instagram
+    </span>
+  </a>
+  <a
+    href="https://www.facebook.com/profile.php?id=100084184864438"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      margin: '10px',
+      fontSize: '70px',
+      color: '#1877F2',
+      textDecoration: 'none',
+    }}
+  >
+    <i className="fa fa-facebook-official" aria-hidden="true"></i>
+    <span
+      style={{
+        color: 'white',
+        marginLeft: '5px',
+        fontSize: '16px',
+        padding: '5px',
+        borderRadius: '5px',
+      }}
+    >
+      Facebook
+    </span>
+  </a>
+</div>
         </div>
   );
 };
