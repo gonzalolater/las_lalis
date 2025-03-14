@@ -305,7 +305,7 @@ const App = () => {
         </div>
         </div>
         </div>
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+<div style={{ display: 'flex', justifyContent: 'center', marginBottom:'150px' }}>
   <a
     href="https://www.instagram.com/las_lalis_/"
     target="_blank"
@@ -359,6 +359,21 @@ const App = () => {
     </span>
   </a>
 </div>
+          <footer
+            style={{
+              marginTop:'200px',
+              backgroundColor: 'purple',
+              color: 'white',
+              padding: '20px',
+              textAlign: 'center',
+              width: '100%',
+              position: 'fixed', // Para que el footer se fije en la parte inferior
+              bottom: '0', // Para que el footer se pegue a la parte inferior
+            }}
+          >
+            <p>ENVIOS A TODO EL PAIS - ♡SHOWROOM♡</p>
+            <p> AMÉRICA 1724, GRAND BOURG, BUENOS AIRES - COORDINAR CITA♡</p>
+          </footer>
         </div>
   );
 };
