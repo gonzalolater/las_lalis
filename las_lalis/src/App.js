@@ -57,7 +57,7 @@ const App = () => {
           }}
         >
           <img
-            src="https://postimg.cc/kBvjzgr0"
+            src="https://i.postimg.cc/X7TTZrsY/445793074-2246891308997298-185742756448443142-n.jpg"
             alt="Camperas"
             style={{ width: '100%', height: '300px', objectFit: 'cover' }}
           />
